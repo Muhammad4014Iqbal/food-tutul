@@ -262,6 +262,7 @@ header .fa-bars{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    position: relative;
 }
 
 
@@ -344,11 +345,11 @@ header .fa-bars{
 .service_container{
     position: absolute;
     top: 100%;
-    left: 12%;
+    left: 10%;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    padding: 4rem;
+    padding: 5rem  5rem;
     background-color: var(--White-color);
     align-items: center;
     justify-content: center;
@@ -844,9 +845,9 @@ header .fa-bars{
 
 
 .send_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .send_container .send_content h3{
@@ -864,11 +865,14 @@ header .fa-bars{
 .input-group {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin:  auto;
+    width: 100%;
   }
   
   .input {
     min-height: 55px;
-    max-width: 100%;
+    width: 100%;
     padding: 0rem 3rem;
     color: #666;
     font-size: 15px;
@@ -1008,6 +1012,7 @@ header .fa-bars{
 
 /* media queries */
 
+
 @media (max-width:768px){
 
 
@@ -1095,7 +1100,7 @@ header .fa-bars{
         margin: 0 auto;
         border-bottom: 4px solid #00AE01;
         padding-bottom: 1.2rem;
-        width: 60%;
+        width: 80%;
         margin-bottom: 10rem;
         margin-top: 10rem;
     }
@@ -1156,7 +1161,7 @@ header .fa-bars{
 
     .product_container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     
     }
@@ -1227,8 +1232,7 @@ header .fa-bars{
     .send_container{
         display: block;
         align-items: center;
-        text-align: center;
-        
+        text-align: center; 
     }
 
     .send_container .send_content h3{
